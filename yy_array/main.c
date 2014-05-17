@@ -105,6 +105,11 @@ void test_array() {
 		CFArrayRemoveAllValues(cf_array);
 	}
     
+    
+    yy_release(yy_array);
+    CFRelease(cf_array);
+    CFRelease(obj);
+    
     printf("\n");
 }
 
